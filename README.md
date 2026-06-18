@@ -1,4 +1,5 @@
 # Lie_Group_Extended_Kalman_Filter
+
 This project extends the traditional Euclidean Extended Kalman Filter (EKF) to the Lie group framework to address estimation problems involving states evolving on SO(3), resulting in the Lie Group Extended Kalman Filter (LG-EKF). 
 
 We proposed this algorithm since, the main question proposed in the thesis is: In the absence of GNSS signals, is it still possible to solve the localization problem? A critical subtlety inherent to this framework is that, given the underlying physical geometry, certain quantities to be estimated reside in non-Euclidean spaces. Consequently, the canonical theory—originally developed under the assumption of vector spaces endowed with standard Euclidean metrics—necessitated a paradigm shift to properly accommodate the geometric peculiarities of these models. 
@@ -36,8 +37,13 @@ $$
 \mathbf{\omega}_{b,n+1} = \xi_{\omega}\mathbf{\omega}_{b,n} + \mathbf{\epsilon}_{b,n}^{\omega}
 $$
 
-Concerning the observation model, we consider that an onboard camera tracks four landmarks ($r = 1, 2, 3, 4$), yielding four independent measurement vector expressions. Projecting the relative displacement vectors into the local aircraft body frame, we write
+Concerning the observation model, we consider that an onboard camera tracks four landmarks ($r = 1, 2, 3, 4$), yielding four independent measurement vector expressions. The
+
+
+Projecting the relative displacement vectors into the local aircraft body frame, we write
 
 $$  \mathbf{y}_{n,r} = \mathbf{R}_n^T(\mathbf{p}^r-\mathbf{p}_n) + \epsilon_{n,y}^r$$
 
-Finally, the flowchart of the entire processing of the algorithm is given by the following figure
+For the processing, it will be also needed an extension of the Jacobian matrix but now calculated on Lie Groups.Finally, the flowchart of the entire processing of the algorithm is given by the following figure
+
+<img width="395" height="554" alt="Captura de Tela 2026-06-18 às 11 49 23" src="https://github.com/user-attachments/assets/59d81969-7b75-4ccd-bbf3-ac803943a191" />
