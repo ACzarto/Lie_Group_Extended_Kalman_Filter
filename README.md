@@ -1,5 +1,6 @@
 # Lie_Group_Extended_Kalman_Filter
 This project extends the traditional Euclidean Extended Kalman Filter (EKF) to the Lie group framework to address estimation problems involving states evolving on SO(3), resulting in the Lie Group Extended Kalman Filter (LG-EKF).
+
 $$
 \mathbf{p}_{n+1} = \mathbf{p}_n + \mathbf{v}_n \Delta T + \frac{1}{2}\left[\mathbf{R}_n(\mathbf{a}_{m,n} - \mathbf{a}_{b,n} - \mathbf{\epsilon}_{a,n}) + \mathbf{g}\right](\Delta T)^2
 $$
