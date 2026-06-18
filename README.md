@@ -37,7 +37,10 @@ $$
 \mathbf{\omega}_{b,n+1} = \xi_{\omega}\mathbf{\omega}_{b,n} + \mathbf{\epsilon}_{b,n}^{\omega}
 $$
 
-Concerning the observation model, we consider that an onboard camera tracks four landmarks ($r = 1, 2, 3, 4$), yielding four independent measurement vector expressions. Projecting the relative displacement vectors into the local aircraft body frame, we write
+Concerning the observation model, we consider that an onboard camera tracks four landmarks ($r = 1, 2, 3, 4$), yielding four independent measurement vector expressions. The
+
+
+Projecting the relative displacement vectors into the local aircraft body frame, we write
 
 $$  \mathbf{y}_{n,r} = \mathbf{R}_n^T(\mathbf{p}^r-\mathbf{p}_n) + \epsilon_{n,y}^r$$
 
