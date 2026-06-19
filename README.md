@@ -49,6 +49,6 @@ For the processing, it will be also needed an extension of the Jacobian matrix b
 
 <img width="395" height="554" alt="Captura de Tela 2026-06-18 às 11 49 23" src="https://github.com/user-attachments/assets/59d81969-7b75-4ccd-bbf3-ac803943a191" />
 
-The results showed that this algorithm enables the system to land safely, as it provides two key measurements that assist the pilot during landing: the LOC (localizer — deviation from the runway centerline) and the GS (glide slope — deviation from the landing descent path) as displayed in the next figure
+The results showed that this algorithm enables the system to land safely, as it provides two reliable measurements (considering the Root Mean Square Error standards defined by the international standards) that assist the pilot during landing: the LOC (localizer — deviation from the runway centerline) and the GS (glide slope — deviation from the landing descent path) as displayed in the next figure
 
 ![Results](Results_LG_EKF.png)
